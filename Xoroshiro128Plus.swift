@@ -56,7 +56,7 @@ internal struct Xoroshiro128Plus {
     mutating func next() -> UInt64 {
         let s0: UInt64 = state[0]
         var s1 = state[1]
-        let result: UInt64 = s0 &* s1
+        let result: UInt64 = s0 &+ s1
         
         s1 ^= s0
         state[0] = rotateLeft(s0, b: 55) ^ s1 ^ (s1 << 14)
