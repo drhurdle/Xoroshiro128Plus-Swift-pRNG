@@ -1,5 +1,5 @@
 # Xoroshiro128Plus-Swift-pRNG
-Pseudo-Random Number generator utilizing xoroshiro128+ algorithm in Swift 2.2
+Pseudo-Random Number generator utilizing xoroshiro128+ algorithm in Swift 3
 
 
 Iniitalize the pRNG
@@ -21,5 +21,5 @@ rng.getRandomNumber()
 rng.getRandomNumber(max: 100)
 
 // Returns a random number between 10 and 20
-rng.getRandomNumber(10, max: 20)
+rng.getRandomNumber(min: 10, max: 20)
 ```
